@@ -1,0 +1,26 @@
+* 
+{
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+}
+.section {
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+section::before {
+    content: ``;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(transparent,transparent, #0005, #0004);
+    z-index: 10000;
+    pointer-events: none;
+}
+.scroll {
+    width: calc(100% + 400px);
+}
